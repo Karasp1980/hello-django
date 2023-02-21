@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["karasp80-hello-django.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["karasp80-hello-django.herokuapp.com", "localhost", os.environ('HEROKU_HOSTNAME')]
 
 
 # Application definition
